@@ -1,0 +1,15 @@
+{
+  "receipt_id": "ADR-EXAMPLE-001",
+  "agent_intent": "Prepare a weekly product update draft from internal meeting notes",
+  "requested_action": "Generate an internal draft document only",
+  "permission_level": "documentation_only",
+  "blocked_surfaces": ["external_publish"],
+  "evidence_required": ["source_note", "boundary_declaration"],
+  "evidence_present": ["source_note", "boundary_declaration"],
+  "human_approval_required": false,
+  "human_approval_present": null,
+  "decision": "allowed",
+  "decision_reason": "Internal draft only; no outbound effect",
+  "external_effect": false,
+  "closeout": "Draft may be edited or discarded; no external rollback required"
+}

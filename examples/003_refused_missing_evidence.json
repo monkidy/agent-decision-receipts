@@ -1,0 +1,15 @@
+{
+  "receipt_id": "ADR-EXAMPLE-003",
+  "agent_intent": "Summarize internal research for a team channel",
+  "requested_action": "Generate internal summary from uploaded notes",
+  "permission_level": "internal_draft",
+  "blocked_surfaces": ["external_publish"],
+  "evidence_required": ["source_note", "boundary_declaration"],
+  "evidence_present": ["boundary_declaration"],
+  "human_approval_required": false,
+  "human_approval_present": null,
+  "decision": "refused",
+  "decision_reason": "Required source note missing; cannot verify action basis",
+  "external_effect": false,
+  "closeout": "No draft created; agent may retry when source note is supplied"
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agent-decision-receipt.v0.schema.json",
+  "title": "Agent Decision Receipt V0",
+  "description": "Public-safe teaching shape for one agent action receipt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "receipt_id",
+    "agent_intent",
+    "requested_action",
+    "permission_level",
+    "blocked_surfaces",
+    "evidence_required",
+    "evidence_present",
+    "human_approval_required",
+    "human_approval_present",
+    "decision",
+    "decision_reason",
+    "external_effect",
+    "closeout"
+  ],
+  "properties": {
+    "receipt_id": {
+      "type": "string",
+      "pattern": "^ADR-EXAMPLE-[0-9]{3}$"
+    },
+    "agent_intent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requested_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "permission_level": {
+      "type": "string",
+      "enum": [
+        "documentation_only",
+        "internal_draft",
+        "external_publish"
+      ]
+    },
+    "blocked_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "external_publish",
+          "credential_access",
+          "filesystem_write"
+        ]
+      }
+    },
+    "evidence_required": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_present": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "human_approval_required": {
+      "type": "boolean"
+    },
+    "human_approval_present": {
+      "type": ["boolean", "null"]
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "allowed",
+        "refused"
+      ]
+    },
+    "decision_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "external_effect": {
+      "type": "boolean"
+    },
+    "closeout": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": { "const": "refused" }
+        },
+        "required": ["decision"]
+      },
+      "then": {
+        "properties": {
+          "external_effect": { "const": false }
+        }
+      }
+    }
+  ]
+}

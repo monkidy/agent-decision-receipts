@@ -1,0 +1,15 @@
+{
+  "receipt_id": "ADR-EXAMPLE-002",
+  "agent_intent": "Publish a customer-facing status update immediately",
+  "requested_action": "Post update to public status page",
+  "permission_level": "external_publish",
+  "blocked_surfaces": [],
+  "evidence_required": ["source_note", "boundary_declaration", "human_approval_record"],
+  "evidence_present": ["source_note", "boundary_declaration"],
+  "human_approval_required": true,
+  "human_approval_present": false,
+  "decision": "refused",
+  "decision_reason": "External publish requires human approval; approval not present",
+  "external_effect": false,
+  "closeout": "No publish attempted; agent may retry after approval is recorded"
+}
