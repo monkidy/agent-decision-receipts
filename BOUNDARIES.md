@@ -2,21 +2,16 @@
 
 This repo is public by design, but incomplete by responsibility.
 
-This staging skeleton is intentionally bounded.
+This public notebook is intentionally bounded.
 It shows a proof pattern, not an operating core.
 
-## This is not
+## Scope
 
-- The private operating system
-- ACE core
-- Asso core
-- AAS or trading infrastructure
-- Runtime or live execution
-- Wallet, provider, broker, or order route
-- Legal or compliance certification
-- A security guarantee
-- A production framework
-- A permission-to-act system
+This notebook focuses on one public pattern: making agent actions easier to inspect.
+
+It does not try to be a production framework, a security guarantee, a compliance product, or a permission-to-act system.
+
+It also does not publish any private operating core, runtime, trading infrastructure, wallet route, provider route, or live execution system.
 
 ## This may be
 
