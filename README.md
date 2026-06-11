@@ -22,7 +22,7 @@ Authority needs proof.
 - A simple public-safe receipt shape
 - Three fictional examples (allowed, refused, refused)
 - A short casebook for a generic documentation scenario
-- Field notes, boundaries, and design principles
+- Field notes, scope and limits, and design principles
 - A local read-only validator
 
 ## What does this not prove?
@@ -31,10 +31,13 @@ This is a teaching pattern, not a product.
 
 This does not prove production readiness, legal compliance, security, or that agents are safe to run without human oversight.
 
+Start with the pattern first, then read the limits.
+
 ## Start here
 
 1. `FIELD_NOTES.md`
 2. `docs/CASEBOOK_V0.md`
 3. `examples/001_allowed_internal_draft.json`
 4. `examples/002_refused_external_publish_missing_approval.json`
-5. `BOUNDARIES.md`
+5. `docs/SCOPE_AND_LIMITS.md`
+6. `BOUNDARIES.md`
