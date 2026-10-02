@@ -1,5 +1,9 @@
 # Agent Decision Receipts
 
+> **Historical public proof notebook, first published June 2026.**
+>
+> This repository preserves an early teaching pattern around readable agent decision receipts. It is not a current SYSTASYS architecture document, not an active product and not a source of current runtime or authority truth.
+
 AI agents should not act in the fog.
 
 This repository is a public proof notebook for Agent Decision Receipts.
@@ -29,7 +33,7 @@ Authority needs proof.
 
 This is a teaching pattern, not a product.
 
-This does not prove production readiness, legal compliance, security, or that agents are safe to run without human oversight.
+This does not prove current SYSTASYS behavior, production readiness, legal compliance, security, or that agents are safe to run without human oversight.
 
 Start with the pattern first, then read the limits.
 
